@@ -36,4 +36,16 @@ I've included a demo program - mecanum.py. This works like the original carsteer
 
 Tom Oinn has forked the RedBoard library and added some very neat features.  
 Head over to [ApproxEng](https://github.com/ApproxEng/RedBoard) and check out his RedBoard console, it's a great tool for setting up your motors and servos.  
-![MX2 Image](https://github.com/RedRobotics/MX2/blob/images/RedBoard%2B%20Console.JPG)
+![MX2 Image](https://github.com/RedRobotics/MX2/blob/images/RedBoard%2B%20Console.JPG)  
+
+---
+
+
+# MX2 Switchboard 
+
+You can test the motors connected to the MX2 without any code!  
+Just plug in the optional MX2 Switchboard and press the buttons (you'll still need to power the MX2). 
+[![](http://img.youtube.com/vi/648YB2zGYNY/0.jpg)](http://www.youtube.com/watch?v=648YB2zGYNY "MX2 Switchboard")
+
+
+
