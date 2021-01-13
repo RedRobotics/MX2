@@ -8,13 +8,27 @@ Use the MX2 with the RedBoard+ for easy control of mecanum wheeled robots.
 [![](http://img.youtube.com/vi/_U4hyjQlxvI/0.jpg)](http://www.youtube.com/watch?v=_U4hyjQlxvI "Mecanum Wheel Test")  
 
 # Usage  
+The MX2 needs to be powered, you can use a different battery to the one powering your RedBoard+, just connect it to the battery input terminals. 
+### Important!  
+
+Check your wiring, there is no reverse polarity potection on the MX2!  
+
+
+![MX2 Image](https://github.com/RedRobotics/MX2/blob/images/MX2_Wiring.png)  
+
+You can use one battery to power the RedBoard+ and the MX2.  
+You'll need to use a decent Lipo which can provide enough power for the whole system.  
+Connect the matching battery terminals together + to + and - to -.  
+Check your wiring, there is no reverse polarity potection on the MX2!  
+![MX2 Image](https://github.com/RedRobotics/MX2/blob/images/MX2_Wiring_one_battery.png)
+
 The MX2 already works with the latest version of the [RedBoard](https://github.com/RedRobotics/RedBoard) Library. If you are already using a RedBoard+, just stack the MX2 on top and use familiar RedBoard commands:
 
 `redboard.M3(50)` - Motor 3 50% forwards
 
 `redboard.M4(-75)` - Motor 4 75% backwards 
 
-I've included a demo program - mecanum.py. Hook up your motors and press the L1 button on your controller to toggle between 'turning' or 'strafing'.  
+I've included a demo program - mecanum.py. This works like the original carsteer.py program, hook up your motors then hold or release the L1 button on your controller to toggle between 'turning' or 'strafing'.  
 
 
 
