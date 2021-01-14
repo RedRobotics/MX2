@@ -75,6 +75,46 @@ Then install pip:
 Now install SMBus and I2CTools:  
 `sudo apt-get install python3-smbus python3-dev i2c-tools -y`  
 
+You can then install the library with:  
+`pip3 install mx2`  
+
+To test the MX2 board, open up a python shell:  
+`python3`
+
+Import the library:    
+`import mx2`  
+
+The library will now report how many MX2 boards are connected.  
+You can now control the motors with the following commands:  
+
+The first parameter is the number of the motor to be controlled.    
+MX2 I2C address: 0x30 - motors 0 & 1  
+MX2 I2C address: 0x31 - motors 2 & 3  
+MX2 I2C address: 0x32 - motors 4 & 5  
+MX2 I2C address: 0x33 - motors 6 & 7  
+
+The second parameter is the speed, there are a few range options:  
+
+For a speed range of 0-100 use:  
+`mx2.M(0,50)` - motor 0, half speed forward  
+`mx2.M(1,-100)` - motor 1, full speed backwards  
+
+For an 8bit speed range, 0 - 255 use:  
+`mx2.M_8bit(2,127)` - motor 2, half speed forward  
+`mx2.M_8bit(3,-255)` - motor 3, full speed backwards  
+
+for a speed range of 0 -1 use:  
+`mx2.m(4,0.5)` - motor 4, half speed forward  
+`mx2.m(5,-1)` - motor 5, full speed backwards  
+
+
+
+
+
+
+
+
+
 
 
 
