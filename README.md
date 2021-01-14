@@ -28,8 +28,14 @@ The MX2 already works with the latest version of the [RedBoard](https://github.c
 
 `redboard.M4(-75)` - Motor 4 75% backwards 
 
-I've included a demo program - mecanum.py. This works like the original carsteer.py program, hook up your motors then hold or release the L1 button on your controller to toggle between 'turning' or 'strafing'.  
+I've included a demo program - mecanum.py. This works like the original carsteer.py program, hook up your motors then hold or release the L1 button on your controller to toggle between 'turning' or 'strafing'.   
 
+---  
+
+You can stack up to four MX2 boards on top of each other.  
+Each board must have a different I2C address, set the address by putting a blob of solder across the address selection pads as shown in the diagram.  
+
+![MX2 Image](https://github.com/RedRobotics/MX2/blob/images/MX2_I2C.png)
 
 
 ---
