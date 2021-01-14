@@ -1,7 +1,7 @@
 # Python library for the Red Robotics 'MX2' Raspberry Pi add on robotics boards.
 # You can stack upto 4 MX2 boards together
 # Simple python commands for controlling motors.
-# Version 0.0.4 14/01/2021
+# Version 0.0.6 14/01/2021
 # Author: Neil Lambeth. neil@redrobotics.co.uk @NeilRedRobotics
 
 from __future__ import print_function  # Make print work with python 2 & 3
