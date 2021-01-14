@@ -45,7 +45,9 @@ Head over to [ApproxEng](https://github.com/ApproxEng/RedBoard) and check out hi
 
 You can test the motors connected to the MX2 without any code!  
 Just plug in the optional MX2 Switchboard and press the buttons (you'll still need to power the MX2). 
-[![](http://img.youtube.com/vi/648YB2zGYNY/0.jpg)](http://www.youtube.com/watch?v=648YB2zGYNY "MX2 Switchboard")
+[![](http://img.youtube.com/vi/648YB2zGYNY/0.jpg)](http://www.youtube.com/watch?v=648YB2zGYNY "MX2 Switchboard")  
 
 
+---
+# Using the MX2 without the RedBoard+
 
