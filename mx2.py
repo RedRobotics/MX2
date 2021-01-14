@@ -1,7 +1,7 @@
 # Python library for the Red Robotics 'MX2' Raspberry Pi add on robotics boards.
 # You can stack upto 4 MX2 boards together
 # Simple python commands for controlling motors.
-# Version 0.1 13/01/2021
+# Version 0.0.4 14/01/2021
 # Author: Neil Lambeth. neil@redrobotics.co.uk @NeilRedRobotics
 
 from __future__ import print_function  # Make print work with python 2 & 3
@@ -19,7 +19,7 @@ except FileNotFoundError:
     print('I2C not enabled!')
     print('Enable I2C in raspi-config')
 
-print("MX2 Library V0.1 loaded")
+print("MX2 Library v0.0.6 loaded")
 
 # Check for connected MX2 boards
 
@@ -29,9 +29,10 @@ for i in range (4):
         bus.write_quick(MX2_ADDR[i])
         print("MX2 found on", hex(MX2_ADDR[i]))
     except OSError:
-        #print("Not found on", hex(MX2_ADDR[i]))
-        pass
+        count += 1
 
+if count > 3:
+    print ('No MX2 boards found!')
 
 # Motor control functions
 
@@ -39,10 +40,10 @@ def M(num,speed): # 0 - 100
     """Speed = -100 to +100"""
 
     if (num % 2) == 0: # Select motor 0 for even motor numbers
-        m_num = num
+        m_num = int(num/2)
         motor = 0x30
     else:
-        m_num = num -1 # Select motor 1 for odd motor numbers
+        m_num = int((num-1)/2) # Select motor 1 for odd motor numbers
         motor = 0x40
 
     if speed > 100:  # Make sure the value sent to the motor is 100 or less
@@ -80,10 +81,10 @@ def M_8bit(num,speed): # 0 - 255
     """Speed = -255 to +255"""
 
     if (num % 2) == 0: # Select motor 0 for even motor numbers
-        m_num = num
+        m_num = int(num/2)
         motor = 0x30
     else:
-        m_num = num -1 # Select motor 1 for odd motor numbers
+        m_num = int((num-1)/2) # Select motor 1 for odd motor numbers
         motor = 0x40
 
     if speed > 255:  # Make sure the value sent to the motor is 255 or less
@@ -117,10 +118,10 @@ def m(num,speed): # 0 - 1
     """Speed = -1 to +1"""
 
     if (num % 2) == 0: # Select motor 0 for even motor numbers
-        m_num = num
+        m_num = int(num/2)
         motor = 0x30
     else:
-        m_num = num -1 # Select motor 1 for odd motor numbers
+        m_num = int((num-1)/2) # Select motor 1 for odd motor numbers
         motor = 0x40
 
     if speed > 1:  # Make sure the value sent to the motor is 100 or less
