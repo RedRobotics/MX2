@@ -59,4 +59,22 @@ The Raspberry Pi will have to be powered via it's USB port from a 5v powerbank, 
 ![MX2 Image](https://github.com/RedRobotics/MX2/blob/images/IMG_20200121_152340.jpg)
 ![MX2 Image](https://github.com/RedRobotics/MX2/blob/images/IMG_20200121_152405.jpg) 
 
-I have created a simple python library to work just with the MX2 (without all of the other RedBoard+ stuff). 
+I have created a simple python library to work just with the MX2 board (without all of the other RedBoard+ stuff).  
+
+First make sure you have the I2C interface enabled:  
+`sudo raspi-config`  
+
+Go to Interface options, go down to I2C, then select YES. 
+
+Make sure your system is up to date with:  
+`sudo apt-get update && sudo apt-get upgrade -y`  
+
+Then install pip:  
+`sudo apt-get install python3-pip -y`  
+
+Now install SMBus and I2CTools:  
+`sudo apt-get install python3-smbus python3-dev i2c-tools -y`  
+
+
+
+
