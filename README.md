@@ -52,7 +52,8 @@ Just plug in the optional MX2 Switchboard and press the buttons (you'll still ne
 # Using the MX2 without the RedBoard+  
 1 - 4 MX2 boards can be stacked on top of each other.   
 You'll need to make sure each board has a different I2C address.
-You will need to solder in the optional 2x5 way pin header to the bottom MX2 board to connect it to the Raspberry Pi.  
+You will need to solder in the optional 2x5 way pin header to the bottom MX2 board to connect it to the Raspberry Pi.
+The Raspberry Pi will have to be powered via it's USB port from a 5v powerbank, each MX2 board will have to be powered with a battery pack (as shown in the diagrams above). 
 
 ![MX2 Image](https://github.com/RedRobotics/MX2/blob/images/IMG_20200121_152340.jpg)
 ![MX2 Image](https://github.com/RedRobotics/MX2/blob/images/IMG_20200121_152405.jpg) 
