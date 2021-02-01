@@ -22,7 +22,7 @@ except FileNotFoundError:
 print("MX2 Library v0.0.6 loaded")
 
 # Check for connected MX2 boards
-
+count = 0
 for i in range (4):
 
     try:
